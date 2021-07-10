@@ -2,7 +2,7 @@ const express = require("express");
 const WooCommerceRestApi = require("@woocommerce/woocommerce-rest-api").default;
 
 const app = express();
-const port = 4000;
+const port = process.env.PORT || 4000;
 
 const api = new WooCommerceRestApi({
   url: "http://bordados.noobhuman.ninja",
